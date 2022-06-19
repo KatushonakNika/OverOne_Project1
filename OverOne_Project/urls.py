@@ -17,9 +17,10 @@ from django.contrib import admin
 from django.urls import path
 from django.contrib import admin
 from django.urls import path
-from Equstrian.views import main
+from Equstrian.views import main, about
 
 urlpatterns = [
-    path('main/', main),
+    path('', main, name='main'),
+    path('about/', about, name='about'),
     path('admin/', admin.site.urls),
 ]
