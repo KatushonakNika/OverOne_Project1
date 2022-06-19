@@ -10,3 +10,10 @@ def main(request):
 def about(request):
     return render(request, 'main/about_page.html')
 
+
+def offer(request):
+    return render(request, 'main/offer_page.html')
+
+
+def price(request):
+    return render(request, 'main/price_page.html')

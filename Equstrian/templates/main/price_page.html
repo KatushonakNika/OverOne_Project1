@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Цены на наши услуги</title>
+</head>
+<body>
+<h1>Индивидуальные занятия по обучению верховой езде:</h1>
+form action="{% url 'price' %}">
+    <input type="submit" value="Стоимость индивидуального занятия">
+</form>
+<h2>Услуги по седержанию лошадей в нашем конном клубе:</h2>
+form action="{% url 'price' %}">
+    <input type="submit" value="Стоимость содержания лошадей">
+</form>
+<h3>Лечебные занятия по иппотерапии:</h3>
+form action="{% url 'price' %}">
+    <input type="submit" value="Стоимость занятий по иппотерапии">
+</form>
+</body>
+</html>

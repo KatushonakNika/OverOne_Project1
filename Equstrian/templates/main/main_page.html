@@ -3,13 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Добро пожаловать в конный мир!</title>
+      <style>
+    body { background: url(age_b_website.jpg) no-repeat;
+     -webkit-background-size: 100%;
+    }
+   .text {
+    text-align:  center;
+   }
+  </style>
 </head>
 <body>
-<h1>Всем привет!</h1>
+ <div class="text">
+<p>Всем привет!</p>
+
+
     Если Вы любите лошадей также, как я, то вам определенно понравится
     подборка информации о пользе занятий конным спортом и о моих индивидуальных тренировках!
 <form action="{% url 'about' %}">
     <input type="submit" value="Немного о нас!">
 </form>
+<form action="{% url 'offer' %}">
+    <input type="submit" value="Что мы предлагаем для Вас?">
+</form>
+     <form action="{% url 'price' %}">
+    <input type="submit" value="Стоимость услуг!">
+</form>
+ </div>
 </body>
 </html>
