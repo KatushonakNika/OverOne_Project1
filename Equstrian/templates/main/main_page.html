@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Добро пожаловать в конный мир!</title>
       <style>
-    body { background: url(age_b_website.jpg) no-repeat;
-     -webkit-background-size: 100%;
+    body { background: url(age_b_website.jpg) space;
+     -webkit-background-size: cover;
     }
    .text {
     text-align:  center;
@@ -14,11 +14,9 @@
 </head>
 <body>
  <div class="text">
-<p>Всем привет!</p>
-
-
-    Если Вы любите лошадей также, как я, то вам определенно понравится
-    подборка информации о пользе занятий конным спортом и о моих индивидуальных тренировках!
+     <p><em>Всем привет!</em></p>
+    <mark>Если Вы любите лошадей также, как я, то вам определенно понравится
+        подборка информации о пользе занятий конным спортом и о моих индивидуальных тренировках!</mark>
 <form action="{% url 'about' %}">
     <input type="submit" value="Немного о нас!">
 </form>
