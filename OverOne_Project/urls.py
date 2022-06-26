@@ -17,13 +17,15 @@ from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.urls import path
-from Equstrian.views import main, about, offer, price
+from django.urls import path, include
+from Equstrian.views import main, about, offer, contacts
+from blog.views import blog
 
 urlpatterns = [
     path('', main, name='main'),
-    path('contacts/', price, name='contacts'),
+    path('contacts/', contacts, name='contacts'),
     path('offer/', offer, name='offer'),
     path('about/', about, name='about'),
+    path('blog/', blog, name='blog'),
     path('admin/', admin.site.urls),
 ]

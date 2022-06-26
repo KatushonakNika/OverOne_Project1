@@ -1,10 +1,10 @@
 from django.shortcuts import render
 
-# Create your views here.
-from django.http import HttpResponse
-
 def main(request):
-    return render(request, 'main/main_page.html')
+    data = {
+        'title': 'Конный двор "Ветер в гриве"'
+    }
+    return render(request, 'main/main_page.html', data)
 
 
 def about(request):
@@ -15,5 +15,5 @@ def offer(request):
     return render(request, 'main/offer_page.html')
 
 
-def price(request):
+def contacts(request):
     return render(request, 'main/contacts.html')

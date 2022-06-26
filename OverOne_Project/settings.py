@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'Equstrian.apps.EqustrianConfig',
     'django.contrib.admin',
+    'blog',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
