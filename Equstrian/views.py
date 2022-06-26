@@ -16,4 +16,4 @@ def offer(request):
 
 
 def price(request):
-    return render(request, 'main/price_page.html')
+    return render(request, 'main/contacts.html')

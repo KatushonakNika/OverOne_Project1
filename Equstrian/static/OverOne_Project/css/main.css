@@ -1,0 +1,32 @@
+body {
+    background: burlywood;
+}
+
+aside {
+    float: left;
+    background: antiquewhite;
+    width: 30%;
+    padding: 3%;
+    height: 100vh;
+    color: saddlebrown;
+    border-right: 5px solid gainsboro;
+}
+
+aside image {
+    float: left;
+}
+
+aside ul {list-style: none}
+
+aside ul li {
+    color: saddlebrown;
+    display: block;
+    transition: transform .5s ease;
+}
+
+aside ul li:hover, aside ul a:hover {
+    text-decoration: none;
+    color: #eb5900;
+    transform: scale(100.20%);
+}
+
