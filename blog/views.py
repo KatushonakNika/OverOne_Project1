@@ -1,4 +1,7 @@
 from django.shortcuts import render
+from .models import Article
 
 def blog(request):
-    return render(request, 'blog/blog.html')
+    blog = Article.objects.order_by('title')
+    return render(request, 'blog/blog.html', {'blog': blog})
+

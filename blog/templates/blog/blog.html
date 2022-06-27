@@ -1,6 +1,13 @@
 {% extends 'main/alltemplates.html' %}
 {% block title %}Новости конного двора "Ветер в Гриве"{% endblock %}
 {% block content %}
+    <div class="features">
     <h1>Новости на сайте</h1>
-    <p>Научиться верховой езде, отдохнуть от городской суеты или просто насладиться компанией лошадей - это к нам!</p>
+        {% for el in blog %}
+            <div class="alert alert-warning">
+            <h3>{{ el.title }}</h3>
+            <p>{{ el.anons }}</p>
+            </div>
+        {% endfor %}
+    </div>
 {% endblock %}
